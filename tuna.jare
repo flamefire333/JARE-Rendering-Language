@@ -1,0 +1,36 @@
+Shape tuna{
+    Math
+    return (((x * x) + 2 * (z * z) < 9) | ((x + -1 * 3 < z * z) & (x > 3 & z * z < 4))) & (y > 0 & y < 0.1);
+}
+Texture ttt{
+    r = 60;
+    g = 60;
+    b = 130 + 60 * z;
+}
+init{
+    Light l;
+    l.r = 255;
+    l.g = 255;
+    l.b = 255;
+    l.y = -2;
+    CAMERA.r = 0;
+    CAMERA.g = 0;
+    CAMERA.b = 128;
+    tuna t;
+    t.r = 200;
+    t.g = 200;
+    t.b = 255;
+    SETTEX t ttt;
+    Sphere eye;
+    eye.r = 0;
+    eye.g = 0;
+    eye.b = 0;
+    eye.x = -2;
+    eye.z = 0.5;
+    eye.sx = 0.3;
+    eye.sy = 0.3;
+    eye.sz = 0.3;
+}
+frames [0,0]{
+
+}

@@ -1,0 +1,20 @@
+init{
+    Light l;
+    l.x = -10;
+    l.y = -5;
+    l.r = 255;
+    l.g = 128;
+    l.b = 0;
+    Light l2;
+    l2.x = 10;
+    l2.y = -5;
+    l2.r = 0;
+    l2.g = 128;
+    l2.b = 255;
+    Sphere s;
+}
+frames[0,6]{
+    CAMERA.x = 5 * sin(t);
+    CAMERA.y = -5 * cos(t);
+    ROTCAM 0 0 1;
+}
